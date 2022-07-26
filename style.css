@@ -1,4 +1,11 @@
+#heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 h1{
+    position: static;
+    display: inline-block;
     letter-spacing: 5px;
     text-shadow: 0px 0px 3px rgb(255, 47, 47), 0 0 3px blue;
     text-align: center;
@@ -32,13 +39,22 @@ body {
     position: fixed;
     height: 100%;
     font-family: Sofia, sans-serif;
-    width: 100%;
-    padding: 20px 24px;
+    width: 25%;
+    padding: 0;
+    margin: 0;
     background-color: black;
-    width: 100%;
-    transition: 0.8s;
+    transition: 1s;
+    overflow: auto;
+    left: 0;
+}
+.items{
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 .nav-second {
+    margin: 0;
+    padding: 0;
     align-items: center;
     display: block;
     position: fixed;
@@ -46,19 +62,22 @@ body {
     font-family: Sofia, sans-serif;
     padding: 20px 24px;
     background-color: black;
-    width: 100%;
-    overflow: hidden;
+    width: 25%;
+    overflow: auto;
     left: -100%;
-    transition: 0.8s;
+    transition: 1s;
 }
 
 .Nav-links {
-    width: 200px;
+    display: block;
     color: white;
     text-decoration: none;
-    display: inline-block;
-    padding: 14px 24px;
+    padding: 50px 5px;
     text-align: center;
+}
+a .Nav-links.active{
+    background-color: pink;
+    color: aqua;
 }
 .Nav-links:hover {
     cursor: default;
@@ -69,4 +88,11 @@ body {
     list-style: none;
     text-align: center;
     align-items: center;
+    padding: none;
+    margin: none;
+}
+.nav{
+    margin: 0;
+    border: 0;
+    padding: 0;
 }

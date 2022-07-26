@@ -12,11 +12,11 @@ function navigate(){
 }
 function neon(ton){
     if(ton == 1){
-        document.getElementById('effect').classList.replace('font-effect-fire','font-effect-neon');
+        document.getElementById('title').classList.replace('font-effect-fire','font-effect-neon');
     }
     else if(ton == 0)
     {
-        document.getElementById('effect').classList.replace('font-effect-neon','font-effect-fire');
+        document.getElementById('title').classList.replace('font-effect-neon','font-effect-fire');
     }
 }
 document.querySelector('#burger').addEventListener('click', navigate());
