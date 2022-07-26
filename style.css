@@ -1,0 +1,72 @@
+h1{
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 3px rgb(255, 47, 47), 0 0 3px blue;
+    text-align: center;
+    font-family: Sofia, Helvetica, sans-serif;
+    font-size: 80px;
+    color: black;
+    /*padding: 20em;*/
+}
+body {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+.burger {
+    background-color: blueviolet;
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 24px 34px;
+    max-width: 100%;
+    position: sticky;
+
+}
+#burger:hover {
+    color: red;
+    font-size: large;
+}
+.nav-first {
+    align-items: center;
+    display: block;
+    position: fixed;
+    height: 100%;
+    font-family: Sofia, sans-serif;
+    width: 100%;
+    padding: 20px 24px;
+    background-color: black;
+    width: 100%;
+    transition: 0.8s;
+}
+.nav-second {
+    align-items: center;
+    display: block;
+    position: fixed;
+    height: 100%;
+    font-family: Sofia, sans-serif;
+    padding: 20px 24px;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    left: -100%;
+    transition: 0.8s;
+}
+
+.Nav-links {
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 24px;
+    text-align: center;
+}
+.Nav-links:hover {
+    cursor: default;
+    background-color: red;
+    transition: 0.5s;
+}
+.nav ul {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
