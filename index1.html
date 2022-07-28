@@ -8,8 +8,25 @@
         <script src="https://kit.fontawesome.com/63d8fc75d6.js" crossorigin="anonymous"></script>
         <title>Viewing Album</title>
     </head>
-    <body>
-        <div class="burger"><i class="fas fa-bars" id="burger" onclick="navigate()"></i></div>
+    <body background="smile1.jpg" style="opacity: 1;">
+        <div class="clear-fix"></div>
+        <div class="burger" style="position: fixed; width: 100%;"><i class="fas fa-close" id="burger" onclick="navigate()"></i>
+            <div class="container" id="container" style="position: sticky;">
+                <div class="contained" id="contained1" onmouseover="pop(2)"> Contacts</div>
+                <div class="contained" id="contained2" onmouseover="pop(1)"> Referees</div>
+                <div class="contained" id="contained3"> Best shots</div>
+                <div class="contained" id="contained4"> Slideshow</div>
+            </div>
+        </div>
+            <div class="clear-fix"></div>
+            <div class="hide" id="contacts" onmouseleave="pop(1)">
+                <table class="tables" id="phone">
+                <tr><td>Name</td><td>Phone Contact</td></tr>
+                    <tr><td>Najib</td><td>0702272796</td></tr>
+                    <tr><td>Benji</td><td>0751948238</td></tr>
+                </table>
+            </div>
+            <div class="clearfix"></div>
         <div id="nav" class="nav-first">
             <nav>
                 <ul>
@@ -23,6 +40,7 @@
         <div id="heading">
             <h1 class="font-effect-fire" id="title" onmouseover="neon(1)" onmouseleave="neon(0)">Home</h1>
         </div>
+        <img src="smile7.jpg" alt="Deku smiling" height="auto" width="auto">
         <script src="main.js"></script>
     </body>
 </html>

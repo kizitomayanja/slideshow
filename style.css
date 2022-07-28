@@ -19,19 +19,63 @@ body {
     padding: 0;
     margin: 0;
 }
+.hide {
+    display: none;
+}
 .burger {
     background-color: blueviolet;
     display: block;
     margin: 0;
     border: 0;
-    padding: 24px 34px;
+    padding: 24px 24px;
     max-width: 100%;
-    position: sticky;
+    position: fixed;
 
 }
-#burger:hover {
+
+.tables {
+    float: right;
+    text-align: center;
+    padding: 3px;
+    border: thick purple;
+    border-collapse: collapse;
+    transition: 1s;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    vertical-align: middle;
+}
+.contained {
+    padding: 20px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.contained:hover{
+    font-size: large;
+    color: yellow;
+    transition: 0.5s;
+}
+.contact-container {
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    background-color: rgb(73, 201, 81);
+    width: 100%;
+}
+.fa-close, .fa-burger {
+    rotate: 180deg;
+    transition: 1s;
+}
+.tablehide {
+    display: hidden;
+}
+#burger:hover{
     color: red;
     font-size: large;
+    transition: 1s;
 }
 .nav-first {
     align-items: center;
@@ -45,12 +89,13 @@ body {
     background-color: black;
     transition: 1s;
     overflow: auto;
-    left: 0;
+    left: -4%;
 }
 .items{
     padding: 0;
     margin: 0;
     border: 0;
+    box-sizing: border-box;
 }
 .nav-second {
     margin: 0;
@@ -64,7 +109,7 @@ body {
     background-color: black;
     width: 25%;
     overflow: auto;
-    left: -100%;
+    left: -29%;
     transition: 1s;
 }
 
@@ -90,9 +135,20 @@ a .Nav-links.active{
     align-items: center;
     padding: none;
     margin: none;
+    overflow: auto;
 }
 .nav{
     margin: 0;
     border: 0;
     padding: 0;
+}
+#burger {
+    padding: 20px;
+    display: block;
+    position: sticky;
+    float: left;
+    transition: 1s;
+}
+.clear-fix {
+    clear: both;
 }
